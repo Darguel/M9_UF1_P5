@@ -1,0 +1,270 @@
+/* borders y margin: rem  y el otro para el texto*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+nav{
+    background-color: black;
+    height:40px;
+    padding-right: 2.5rem;
+    position:sticky;
+    top: 0;
+}
+nav a{
+    color: white;
+    font-size: 1em;
+    /* border: 1px solid skyblue; */
+    padding: 0.75rem;
+    float: right;
+    text-decoration: none;
+    
+}
+nav a:hover{
+    background-color: gray;
+}
+
+header{
+    height: 400px;
+    width: 100%;
+    background-image: url(imagenes/headerOs.png);
+    background-size: cover;
+    background-position-y: center;
+}
+
+main{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/**
+hay código repetido, meter los elementos del header dentro de div
+*/
+header h1{
+    color: white;
+    font-size: 3rem;
+    margin-left: 15%;
+    padding-top: 150px;
+    font-weight:normal;
+}
+header h1 span{
+    font-size: 3rem;
+    font-weight:bolder;
+}
+header p{
+    color: white;
+    margin-left: 15%;
+
+}
+.sobreNosaltres{
+    margin: 3% 15%;
+}
+
+.primero{
+    margin:  3% 0%;
+    overflow: auto;
+}
+
+.segundo{
+    margin: 3% 0%;
+    overflow: auto;
+}
+
+
+.texto1{
+    padding: 3% 0% 3% 3%;
+    text-align: justify;
+}
+.texto2{
+    padding: 3% 3% 3% 0%;
+    text-align: justify;
+}
+.imgSN1{
+    float: left;
+    margin-right: 10px;
+}
+
+.imgSN2{
+    float: right;
+    margin-left: 10px;
+}
+
+.imgSN1 img, .imgSN2 img{
+    border-radius: 10px;
+}
+
+.menus{
+    margin: 2% 15%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    height: auto;
+    grid-template-rows: 0.1fr 1fr 2fr 1fr 2fr ;
+    grid-template-areas: 
+        "titleMenu titleMenu titleMenu"
+        "menu1 contenido contenido"
+        "menu1 img1 img2"
+        "menu2 contenido2 contenido2"
+        "menu2 img2-1 img2-2";
+
+}
+.tituloCarta{
+    margin-left: 15%;
+}
+
+.titleMenu{
+    grid-area: titleMenu;
+    padding: 1%;
+    background-color: #000080;
+    color: white;
+    text-align: center;
+    
+}
+
+.menu1{
+    border: 1px solid teal;
+    grid-area: menu1;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.contenido{
+    grid-area: contenido;
+    margin: 15px 0px 10px 10px;
+}
+
+.img1-1{
+    grid-area: img1;
+    background-image: url(imagenes/imgGrid1.jpg);
+    background-size: cover;
+    background-position-y: center;
+    margin: 5px 0px 0px 10px;
+
+}
+
+.img1-2{
+    grid-area: img2;
+    background-image: url(imagenes/imgGrid1-1.jpg);
+    background-size: cover;
+    background-position-y: center;
+    margin: 5px 0px 0px 10px;
+}
+
+
+.menu2{
+    border: 1px solid teal ;
+    grid-area: menu2;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.contenido2{
+    grid-area: contenido2;
+    margin: 15px 0px 10px 10px;
+}
+
+.img2-1{
+    grid-area: img2-1;
+    background-image: url(imagenes/imgGrid2.jpg);
+    background-size: cover;
+    background-position-y: center;
+    margin: 5px 0px 0px 10px;
+    padding: 5%;
+}
+
+.img2-2{
+    grid-area: img2-2;
+    background-image: url(imagenes/imgGrid2-2.jpg);
+    background-size: cover;
+    background-position-y: center;
+    margin: 5px 0px 0px 10px;
+}
+
+
+.contenidor {
+    margin: 3% 15%;
+
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+
+.imagenes img {
+    width: calc(25% - 22px);
+    margin: 10px; 
+    border: 1px solid transparent;    
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.imagenes img:nth-child(4n + 1) {
+    margin-left: 0; 
+}
+
+.imagenes img:nth-child(4n) {
+    margin-right: 0;
+}
+.imagenes img:hover {
+    border-color: whitesmoke;
+    filter: brightness(40%);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.contacto {
+    display: flex;
+    padding: 0px;
+}
+
+footer div {
+    display: flex;
+    padding: 10px;
+    width: fit-content;
+    color: #fff;
+}
+
+.mail, .mob{
+    padding-left: 10px;
+    text-align: center;
+    width: fit-content;
+    margin: auto; 
+}
+
+.nombre-fo{
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
