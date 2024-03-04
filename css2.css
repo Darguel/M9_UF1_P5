@@ -1,0 +1,33 @@
+.section {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+.div {
+    flex-basis: 23%;
+    margin: 0.5%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+.item5{
+    flex-basis: 95%;
+    background-color: rgb(237, 44, 227);
+}
+
+.color1{
+    background-color: rgb(163, 73, 159);
+}
+
+.color2{
+    background-color: rgb(39, 224, 150);
+}
+.color3{
+    background-color: rgb(19, 138, 140);
+}
+
+.color4{
+    background-color: rgb(116, 9, 110);
+}

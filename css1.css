@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .circle1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    mix-blend-mode: multiply; /* Propiedad para mezclar los colores */
+    position: absolute;
+    top: 115px;
+  }
+  .circle2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    mix-blend-mode: multiply; /* Propiedad para mezclar los colores */
+    position: absolute;
+    top: 165px;
+  }
+  .circle3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 700px;
+    top: 135px;
+    mix-blend-mode: multiply; /* Propiedad para mezclar los colores */
+  }
+
+  .circle4 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    mix-blend-mode: difference; /* Propiedad para mezclar los colores */
+    position: absolute;
+    top: 115px;
+    left: 200px;
+  }
+  .circle5 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    mix-blend-mode: difference; /* Propiedad para mezclar los colores */
+    position: absolute;
+    top: 65px;
+    left: 200px;
+  }
+  .circle6 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 240px;
+    top: 90px;
+    mix-blend-mode: difference; /* Propiedad para mezclar los colores */
+  }
+
+  .cyan {
+    background-color: cyan;
+  }
+
+  .magenta {
+    background-color: magenta;
+  }
+
+  .yellow {
+    background-color: yellow;
+  }
+
+  .rojo{
+    background-color: rgb(255, 0, 0);
+  }
+  .verde{
+    background-color: rgb(0, 255, 0);
+  }
+  .azul{
+    background-color: rgb(0, 0, 255);
+  }

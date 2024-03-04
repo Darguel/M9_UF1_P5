@@ -1,0 +1,268 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    z-index: 33;
+}
+nav{
+    background-color: black;
+    height:40px;
+    padding-right: 2.5rem;
+}
+nav a{
+    color: white;
+    font-size: 1em;
+    padding: 0.75rem;
+    float: right;
+    text-decoration: none;
+    
+}
+nav a:hover{
+    background-color: gray;
+}
+
+.bc-header{
+    background-image: url(../Resources/descarga.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros{
+    margin : 5% 15%;
+}
+
+.primero{
+    overflow: auto;
+    padding-left: 0%;
+    padding-right: 1.5rem;
+    padding-top: 2%;
+}
+
+.segundo{
+    margin-top: 20px;
+    overflow: auto;
+    padding-right: 0%;
+    padding-left: 1.5rem;
+    
+}
+.img1{
+    width: auto;
+}
+.img2{
+    float: right;
+}
+
+img{
+    width: 275px;
+    height: 200px;
+    float: left;
+}
+
+.texto1{
+    padding-top: 30px;
+    padding-left: 30% ;
+    text-align: justify;
+}
+
+.texto2{
+    padding-right: 30%;
+    padding-top: 30px;
+    text-align: justify;
+}
+
+.carta{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Crea 5 columnas de igual anchura */
+    gap: 10px; /* Espacio entre las celdas del grid */
+    padding: 20px;
+}
+
+
+.grid-item {
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.item1 {
+  color: white;
+  padding: 20px;
+  background-color: rgb(131,53,209);
+  text-align: center;
+  grid-column: span 5;
+  grid-row: span 1;
+}
+
+.item2 {
+  grid-column: span 1;
+  grid-row: span 3;
+  border: 1px solid black;
+}
+.menu1{
+  padding-top: 80%;
+}
+
+.item3 {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.item4 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url(../Resources/descarga3.png);
+  background-size: cover;
+}
+
+.item5 {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url(../Resources/descarga3.png);
+  background-size: cover;
+}
+
+.img1carta{
+  width: 100%;
+  height: 100%;
+}
+
+.img2carta{
+  width: 100%;
+  height: 100%;   
+}
+
+.texto1menu{
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  color: black;
+}
+
+.img-com{
+  background-image: url(../Resources/comida-rapida-casera.png);
+  background-size: cover;
+  background-position: center;
+  width: 23%;
+  height: 200px;
+  background-blend-mode: multiply;
+
+}
+
+.galeria{
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.oscuras{
+  background-color: rgb(0,0,0,.30);
+}
+
+.flex-hover:hover{
+  background-color: rgb(0,0,0,.50);
+}
+
+footer{
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.flex{
+  display: flex;
+    align-items: center;
+}
+
+.padding{
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 800px){
+ 
+ /* parte de sobre nosotros */
+  .primero{
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+ }
+ .segundo{
+  padding: 0px;
+ }
+ img {
+  width: 100%;
+  height: auto;
+ }
+ .img2 {
+  float: none;
+ }
+ .texto1{
+  padding: 10px 0px;
+ }
+ .texto2{
+  padding: 10px 0px;
+ }
+
+/* parte del menu */
+ .item2{
+  grid-row: span 5;
+ }
+ .item4{
+  grid-column: span 4;
+ }
+ .item5{
+  grid-column: span 4;
+ }
+ /* parte inferior */
+ .img-com{
+  width: 48%;
+ }
+}
+
+@media (max-width: 600px){
+  .nosotros{
+    margin: 5%;
+    font-size: 30px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .item2{
+    grid-column: span 5;
+    grid-row: span 1;
+  }
+  .menu1 {
+    padding-top: 0%;
+  }
+  .item3{
+    grid-column: span 5;
+  }
+  .item4{
+    grid-column: span 5;
+   }
+   .item5{
+    grid-column: span 5;
+   }
+  .img-com{
+    width: 100%;
+  }
+}
